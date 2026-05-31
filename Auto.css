@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
+body { background-color: #f4f7f6; color: #2c3e50; line-height: 1.6; }
+
+.header-principal { background-color: #1a252f; color: #ffffff; display: flex; justify-content: space-between; align-items: center; padding: 15px 50px; position: relative; top: 0; z-index: 1000; }
+.logo-contenedor { display: flex; align-items: center; gap: 10px; }
+
+.logo-circulo-animado { height: 35px; width: 35px; border: 4px solid #3498db; border-top: 4px solid #e74c3c; border-radius: 50%; animation: rotarLogo 2s linear infinite; }
+@keyframes rotarLogo { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+.logo-texto { font-size: 26px; font-weight: 700; }
+.logo-texto span { color: #3498db; }
+.barra-navegacion { display: flex; align-items: center; gap: 20px; }
+.nav-enlace { color: #bdc3c7; text-decoration: none; font-weight: 600; }
+.btn-nav { background-color: #3498db; color: white; padding: 8px 15px; border-radius: 5px; }
+
+.hero-seccion { background: linear-gradient(135deg, #1a252f, #34495e); height: 30vh; display: flex; justify-content: center; align-items: center; text-align: center; color: white; }
+.hero-contenido h2 { font-size: 36px; margin-bottom: 10px; }
+.hero-contenido p { font-size: 16px; margin-bottom: 15px; }
+.btn-primario { background-color: #e74c3c; color: white; padding: 10px 25px; text-decoration: none; font-weight: bold; border-radius: 30px; }
+
+.corporativo-seccion { display: flex; justify-content: center; gap: 25px; padding: 30px 10%; background-color: #ffffff; }
+.corporativo-tarjeta { flex: 1; background-color: #f8f9fa; padding: 20px; border-radius: 8px; border-left: 5px solid #3498db; }
+.catalogo-principal { padding: 30px 5%; }
+.seccion-titulo { text-align: center; margin-bottom: 30px; }
+.categoria-bloque { margin-bottom: 40px; }
+
+/* Cabeceras de categorías limpias y estilizadas */
+.categoria-cabecera-electricos { background: linear-gradient(135deg, #c9daf9, #2a5298); border-radius: 8px; margin-bottom: 20px; height: 65px; display: flex; align-items: center; padding-left: 25px; color: white; }
+.categoria-cabecera-hibridos { background: linear-gradient(135deg, #6cfff3, #38ef7d); border-radius: 8px; margin-bottom: 20px; height: 65px; display: flex; align-items: center; padding-left: 25px; color: white; }
+.categoria-cabecera-autos { background: linear-gradient(135deg, #141e30, #243b55); border-radius: 8px; margin-bottom: 20px; height: 65px; display: flex; align-items: center; padding-left: 25px; color: white; }
+.categoria-cabecera-camionetas { background: linear-gradient(135deg, #f77d8c, #93291e); border-radius: 8px; margin-bottom: 20px; height: 65px; display: flex; align-items: center; padding-left: 25px; color: white; }
+
+.autos-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 20px; }
+.auto-tarjeta { background-color: white; border-radius: 8px; overflow: hidden; border: 1px solid #e2e8f0; }
+
+/* Estilos de los enlaces en las imágenes */
+.enlace-bloque-auto { display: block; text-decoration: none; }
+.auto-img-contenedor { position: relative; height: 150px; background-color: #f8f9fa; display: flex; justify-content: center; align-items: center; padding: 10px; transition: background 0.3s; }
+.auto-img-contenedor:hover { background-color: #eaeaea; }
+.auto-img { max-width: 100%; max-height: 100%; }
+
+.auto-tag { position: absolute; top: 10px; right: 10px; background-color: #2ecc71; color: white; padding: 2px 8px; border-radius: 15px; font-size: 10px; font-weight: bold; }
+.auto-info { padding: 15px; }
+.auto-info h4 { font-size: 16px; margin-bottom: 5px; color: #1a252f; }
+.auto-especificaciones { font-size: 12px; color: #7f8c8d; margin-bottom: 10px; }
+.auto-precio { font-size: 18px; font-weight: bold; color: #e74c3c; margin-bottom: 12px; }
+.btn-tarjeta { width: 100%; background-color: #1a252f; color: white; border: none; padding: 8px; border-radius: 4px; font-weight: bold; cursor: pointer; }
+
+.formulario-seccion { background-color: #1a252f; color: white; padding: 40px 10%; }
+.formulario-contenedor { max-width: 550px; margin: 0 auto; background-color: #ffffff; color: #2c3e50; padding: 30px; border-radius: 8px; }
+.form-grupo { margin-bottom: 15px; }
+.form-grupo label { display: block; font-weight: 600; margin-bottom: 5px; }
+.form-grupo input, .form-grupo select { width: 100%; padding: 10px; border: 1px solid #cccccc; border-radius: 4px; }
+.btn-enviar { width: 100%; background-color: #2ecc71; color: white; font-size: 16px; font-weight: bold; border: none; padding: 11px; border-radius: 4px; cursor: pointer; }
+
+.resultado-oculto { display: none; }
+.resultado-visible { display: block; margin-top: 15px; padding: 12px; border-radius: 4px; background-color: #d4edda; color: #155724; }
+.footer-final { background-color: #11181f; color: #7f8c8d; text-align: center; padding: 15px; font-size: 12px; }

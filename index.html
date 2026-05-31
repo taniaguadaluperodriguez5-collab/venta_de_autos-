@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoElite | Venta de Vehículos de Prestigio</title>
+    <link rel="stylesheet" href="Auto.css">
+</head>
+<body>
+
+    <header class="header-principal">
+        <div class="logo-contenedor">
+            <img src="logo.gif">
+            <div class="logo-circulo-animado"></div>
+            <h1 class="logo-texto">Auto<span>Elite</span></h1>
+        </div>
+        <nav class="barra-navegacion">
+            <a href="#electricos" class="nav-enlace">Eléctricos</a>
+            <a href="#hibridos" class="nav-enlace">Híbridos</a>
+            <a href="#autos" class="nav-enlace">Autos</a>
+            <a href="#camionetas" class="nav-enlace">Camionetas</a>
+            <a href="#compra-venta" class="nav-enlace btn-nav">Cotizar o Vender</a>
+        </nav>
+    </header>
+
+    <section class="hero-seccion">
+        <div class="hero-contenido">
+            <h2>Encuentra el auto de tus sueños</h2>
+            <p>Explora nuestro catálogo exclusivo con más de 80 vehículos listos para entrega inmediata.</p>
+            <a href="#catalogo" class="btn-primario">Explorar Catálogo</a>
+        </div>
+    </section>
+
+    <section class="corporativo-seccion">
+        <div class="corporativo-tarjeta mision">
+            <h3>Nuestra Misión</h3>
+            <p>Proveer soluciones de movilidad extraordinarias mediante la comercialización de automóviles de alta calidad, brindando un servicio transparente, personalizado y tecnológico.</p>
+        </div>
+        <div class="corporativo-tarjeta vision">
+            <h3>Nuestra Visión</h3>
+            <p>Ser la plataforma líder y más confiable de venta de automóviles a nivel nacional, reconocida por nuestra innovación digital y la transición hacia vehículos ecológicos.</p>
+        </div>
+    </section>
+
+    <main id="catalogo" class="catalogo-principal">
+        <h2 class="seccion-titulo">Nuestro Catálogo Exclusivo</h2>
+        
+        <section id="electricos" class="categoria-bloque">
+            <div class="categoria-cabecera-electricos">
+                <a href="electricos.html" class="enlace-cabecera">
+                <h2>Vehículos Eléctricos</h2>
+                </a>
+            </div>
+            <div class="autos-grid" id="grid-electricos"></div>
+        </section>
+
+        <section id="hibridos" class="categoria-bloque">
+            <div class="categoria-cabecera-hibridos">
+                <a href="hibridos.html" class="enlace-cabecera">
+                <h2>Vehículos Híbridos</h2>
+                </a>
+            </div>
+            <div class="autos-grid" id="grid-hibridos"></div>
+        </section>
+
+        <section id="autos" class="categoria-bloque">
+            <div class="categoria-cabecera-autos">
+                <a href="Autos Sedán y Deportivos.html" class="enlace-cabecera">
+                <h2>Autos Sedán y Deportivos</h2>
+                </a>
+
+            </div>
+            <div class="autos-grid" id="grid-autos"></div>
+        </section>
+
+        <section id="camionetas" class="categoria-bloque">
+            <div class="categoria-cabecera-camionetas">
+                <a href="Camionetas y SUVs.html" class="enlace-cabecera">
+
+                <h2>Camionetas y SUVs</h2>
+                </a>
+                
+            </div>
+            <div class="autos-grid" id="grid-camionetas"></div>
+        </section>
+    </main>
+
+    <section id="compra-venta" class="formulario-seccion">
+        <div class="formulario-contenedor">
+            <h2>Formulario de Compra, Venta y Cotización</h2>
+            <p>Completa tus datos y un asesor se contactará contigo en menos de 15 minutos.</p>
+            
+            <form id="formAuto" onsubmit="procesarFormulario(event)">
+                <div class="form-grupo">
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" required placeholder="Ej. Juan Pérez">
+                </div>
+                
+                <div class="campo-grupo">
+                    <label for="tipoTramite">Tipo de Trámite:</label>
+                    <select id="tipoTramite" name="tipoTramite" required>
+                          <option value="" disabled selected>Selecciona una opción</option>
+                          <option value="comprar">Quiero comprar un vehículo</option>
+                          <option value="vender">Quiero vender mi auto</option>
+                          <option value="cotizar">Quiero una cotización</option>
+    </select>
+</div>
+
+                <div class="form-grupo">
+                    <label for="modelo-interes">Modelo o Tipo de Auto:</label>
+                    <input type="text" id="modelo-interes" required placeholder="Ej. Tesla Model S">
+                </div>
+
+                <div class="form-grupo" id="campo-precio">
+                    <label for="precio-estimado">Presupuesto Estimado ($ USD):</label>
+                    <input type="number" id="precio-estimado" placeholder="Ej. 25000">
+                </div>
+
+                <button type="submit" class="btn-enviar">Enviar Solicitud</button>
+            </form>
+            <div id="resultado-formulario" class="resultado-oculto"></div>
+        </div>
+    </section>
+
+    <footer class="footer-final">
+        <p>&copy; 2026 AutoElite S.A. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
