@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoElite | Autos Sedán y Deportivos</title>
+    <link rel="stylesheet" href="subpaginas.css">
+</head>
+<body>
+
+    <header class="header-subpagina" style="background: linear-gradient(135deg, #141e30, #243b55);">
+        <a href="index.html" class="btn-regresar">&larr; Volver al Inicio</a>
+        <h1>Autos Sedán y Deportivos (20 Disponibles)</h1>
+    </header>
+
+    <main class="contenido-subpagina">
+        <p class="introduccion">Líneas elegantes, gran aerodinámica y la potencia clásica que exigen los entusiastas del asfalto.</p>
+        
+        <div class="tabla-contenedor">
+            <table class="tabla-autos">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Imagen</th>
+                        <th>Modelo</th>
+                        <th>Año</th>
+                        <th>Autonomía / Motor</th>
+                        <th>Precio (USD)</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td><img src="s1.jpg" alt="BMW" class="img-tabla-auto"></td><td><strong>BMW M4 Coupe</strong></td><td>2026</td><td>V6 Twin-Turbo 503 HP</td><td class="precio-celda">$78,100</td><td><button class="btn-comprar" style="background: #141e30;" onclick="seleccionarAuto('BMW M4 Coupe', 78100)">Comprar</button></td></tr>
+                    <tr><td>2</td><td><img src="s2.jpg" alt="Mercedes" class="img-tabla-auto"></td><td><strong>Mercedes-Benz C-Class</strong></td><td>2025</td><td>4 Cilindros Turbo Intercooled</td><td class="precio-celda">$46,900</td><td><button class="btn-comprar" style="background: #141e30;" onclick="seleccionarAuto('Mercedes-Benz C-Class', 46900)">Comprar</button></td></tr>
+                    <tr><td>3</td><td><img src="s3.jpeg" alt="Audi" class="img-tabla-auto"></td><td><strong>Audi A6 Sedan</strong></td><td>2025</td><td>TFSI Inyección Directa</td><td class="precio-celda">$57,300</td><td><button class="btn-comprar" style="background: #141e30;" onclick="seleccionarAuto('Audi A6 Sedan', 57300)">Comprar</button></td></tr>
+                    <tr><td>4</td><td><img src="s4.jpg" alt="Ford" class="img-tabla-auto"></td><td><strong>Ford Mustang GT</strong></td><td>2026</td><td>V8 Coyote 5.0L HighFlow</td><td class="precio-celda">$42,500</td><td><button class="btn-comprar" style="background: #141e30;" onclick="seleccionarAuto('Ford Mustang GT', 42500)">Comprar</button></td></tr>
+                    <tr><td>5</td><td><img src="s5.jpg" alt="Chevrolet" class="img-tabla-auto"></td><td><strong>Chevrolet Corvette C8</strong></td><td>2025</td><td>6.2L V8 DI Mid-Engine</td><td class="precio-celda">$68,300</td><td><button class="btn-comprar" style="background: #141e30;" onclick="seleccionarAuto('Chevrolet Corvette C8', 68300)">Comprar</button></td></tr>
+                    <tr><td>6</td><td><img src="s6.avif" alt="Honda" class="img-tabla-auto"></td><td><strong>Honda Civic Type R</strong></td><td>2025</td><td>2.0L VTEC Turbo High Output</td><td class="precio-celda">$44,800</td><td><button class="btn-comprar" style="background: #141e30;" onclick="seleccionarAuto('Honda Civic Type R', 44800)">Comprar</button></td></tr>
+                    <tr><td>7</td><td><img src="s7.webp" alt="Nissan" class="img-tabla-auto"></td><td><strong>Nissan Z Performance</strong></td><td>2025</td><td>3.0L Twin-Turbo V6</td><td class="precio-celda">$51,000</td><td><button class="btn-comprar" style="background: #141e30;" onclick="seleccionarAuto('Nissan Z Performance', 51000)">Comprar</button></td></tr>
+                    <tr><td>8</td><td><img src="s8.webp" alt="Subaru" class="img-tabla-auto"></td><td><strong>Subaru WRX STI</strong></td><td>2025</td><td>Symmetrical AWD Boxer Turbo</td><td class="precio-celda">$38,500</td><td><button class="btn-comprar" style="background: #141e30;" onclick="seleccionarAuto('Subaru WRX STI', 38500)">Comprar</button></td></tr>
+                    <tr><td>9</td><td><img src="s9.jpg" alt="Toyota" class="img-tabla-auto"></td><td><strong>Toyota Supra GR</strong></td><td>2026</td><td>3.0L Twin-Scroll Inline-6</td><td class="precio-celda">$56,500</td><td><button class="btn-comprar" style="background: #141e30;" onclick="seleccionarAuto('Toyota Supra GR', 56500)">Comprar</button></td></tr>
+                    <tr><td>10</td><td><img src="s10.avif" alt="Lexus" class="img-tabla-auto"></td><td><strong>Lexus IS 500 F</strong></td><td>2025</td><td>5.0L V8 Nat-Aspirated</td><td class="precio-celda">$60,200</td><td><button class="btn-comprar" style="background: #141e30;" onclick="seleccionarAuto('Lexus IS 500 F', 60200)">Comprar</button></td></tr>
+                    <tr><td>11</td><td><img src="s11.jpg" alt="Porsche" class="img-tabla-auto"></td><td><strong>Porsche 911 Carrera</strong></td><td>2026</td><td>3.0L Twin-Turbo Flat-6</td><td class="precio-celda">$116,000</td><td><button class="btn-comprar" style="background: #141e30;" onclick="seleccionarAuto('Porsche 911 Carrera', 116000)">Comprar</button></td></tr>
+                    <tr><td>12</td><td><img src="s12.jpg" alt="Dodge" class="img-tabla-auto"></td><td><strong>Dodge Charger ScatPack</strong></td><td>2025</td><td>392 HEMI V8 SRT Engine</td><td class="precio-celda">$53,900</td><td><button class="btn-comprar" style="background: #141e30;" onclick="seleccionarAuto('Dodge Charger ScatPack', 53900)">Comprar</button></td></tr>
+                    <tr><td>13</td><td><img src="s13.jpg" alt="Cadillac" class="img-tabla-auto"></td><td><strong>Cadillac CT5-V Blackwing</strong></td><td>2026</td><td>6.2L Supercharged V8</td><td class="precio-celda">$94,500</td><td><button class="btn-comprar" style="background: #141e30;" onclick="seleccionarAuto('Cadillac CT5-V Blackwing', 94500)">Comprar</button></td></tr>
+                    <tr><td>14</td><td><img src="s14.jpg" alt="Volkswagen" class="img-tabla-auto"></td><td><strong>Volkswagen Golf R</strong></td><td>2025</td><td>2.0T TSI 4Motion R-Drive</td><td class="precio-celda">$45,400</td><td><button class="btn-comprar" style="background: #141e30;" onclick="seleccionarAuto('Volkswagen Golf R', 45400)">Comprar</button></td></tr>
+                    <tr><td>15</td><td><img src="s15.jpg" alt="Alfa" class="img-tabla-auto"></td><td><strong>Alfa Romeo Giulia Quadrifoglio</strong></td><td>2025</td><td>2.9L Twin-Turbo V6</td><td class="precio-celda">$81,200</td><td><button class="btn-comprar" style="background: #141e30;" onclick="seleccionarAuto('Alfa Romeo Giulia Quadrifoglio', 81200)">Comprar</button></td></tr>
+                    <tr><td>16</td><td><img src="s16.jpg" alt="Mazda" class="img-tabla-auto"></td><td><strong>Mazda 3 Hatchback Turbo</strong></td><td>2025</td><td>Skyactiv-G 2.5T AWD</td><td class="precio-celda">$33,500</td><td><button class="btn-comprar" style="background: #141e30;" onclick="seleccionarAuto('Mazda 3 Hatchback Turbo', 33500)">Comprar</button></td></tr>
+                    <tr><td>17</td><td><img src="s17.jpg" alt="Hyundai" class="img-tabla-auto"></td><td><strong>Hyundai Elantra N</strong></td><td>2025</td><td>2.0T GDI Flat Power</td><td class="precio-celda">$34,100</td><td><button class="btn-comprar" style="background: #141e30;" onclick="seleccionarAuto('Hyundai Elantra N', 34100)">Comprar</button></td></tr>
+                    <tr><td>18</td><td><img src="s18.jpg" alt="Kia" class="img-tabla-auto"></td><td><strong>Kia Stinger GT2</strong></td><td>2025</td><td>3.3L Twin-Turbo V6 AWD</td><td class="precio-celda">$52,800</td><td><button class="btn-comprar" style="background: #141e30;" onclick="seleccionarAuto('Kia Stinger GT2', 52800)">Comprar</button></td></tr>
+                    <tr><td>19</td><td><img src="s19.avif" alt="Genesis" class="img-tabla-auto"></td><td><strong>Genesis G80 Sport</strong></td><td>2026</td><td>3.5T V6 AWD Control-Susp</td><td class="precio-celda">$65,500</td><td><button class="btn-comprar" style="background: #141e30;" onclick="seleccionarAuto('Genesis G80 Sport', 65500)">Comprar</button></td></tr>
+                    <tr><td>20</td><td><img src="s20.png" alt="Infiniti" class="img-tabla-auto"></td><td><strong>Infiniti Q50 Red Sport</strong></td><td>2025</td><td>VR30DDTT Twin Turbo V6</td><td class="precio-celda">$57,000</td><td><button class="btn-comprar" style="background: #141e30;" onclick="seleccionarAuto('Infiniti Q50 Red Sport', 57000)">Comprar</button></td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <section class="registro-compra">
+            <h2>Formulario de Registro de Compra</h2>
+            <form id="formRegistro" onsubmit="registrarCompra(event)">
+                <div class="campo-grupo">
+                    <label>Auto Seleccionado:</label>
+                    <input type="text" id="autoElegido" readonly required placeholder="Haz clic en 'Comprar' arriba">
+                </div>
+                <div class="campo-grupo">
+                    <label>Precio del Vehículo:</label>
+                    <input type="text" id="precioElegido" readonly required placeholder="$0.00">
+                </div>
+                <div class="campo-grupo">
+                    <label>Nombre del Comprador:</label>
+                    <input type="text" id="nombreComprador" required placeholder="Tu nombre completo">
+                </div>
+                <div class="campo-grupo">
+                    <label>Identificación / Cédula:</label>
+                    <input type="text" id="idComprador" required placeholder="Número de documento">
+                </div>
+                <button type="submit" class="btn-confirmar" style="background: #22c55e;">Confirmar Registro</button>
+            </form>
+            <div id="mensajeExito" class="alerta-oculta"></div>
+        </section>
+    </main>
+
+    <script src="subpaginas.js"></script>
+</body>
+</html>

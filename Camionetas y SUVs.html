@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoElite | Camionetas y SUVs</title>
+    <link rel="stylesheet" href="subpaginas.css">
+</head>
+<body>
+
+    <header class="header-subpagina" style="background: linear-gradient(135deg, #ed213a, #93291e);">
+        <a href="index.html" class="btn-regresar">&larr; Volver al Inicio</a>
+        <h1>Camionetas y SUVs (20 Disponibles)</h1>
+    </header>
+
+    <main class="contenido-subpagina">
+        <p class="introduccion">Poder, espacio y confort de tracción total. Modelos diseñados para terrenos exigentes y viajes familiares.</p>
+        
+        <div class="tabla-contenedor">
+            <table class="tabla-autos">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Imagen</th>
+                        <th>Modelo</th>
+                        <th>Año</th>
+                        <th>Autonomía / Motor</th>
+                        <th>Precio (USD)</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td><img src="c1.avif" alt="Ford" class="img-tabla-auto"></td><td><strong>Ford Explorer ST</strong></td><td>2025</td><td>3.0L EcoBoost V6 AWD</td><td class="precio-celda">$55,200</td><td><button class="btn-comprar" style="background: #ed213a;" onclick="seleccionarAuto('Ford Explorer ST', 55200)">Comprar</button></td></tr>
+                    <tr><td>2</td><td><img src="c2.jpg" alt="Chevrolet" class="img-tabla-auto"></td><td><strong>Chevrolet Tahoe Z71</strong></td><td>2026</td><td>V8 EcoTec3 con Dynamic Management</td><td class="precio-celda">$64,300</td><td><button class="btn-comprar" style="background: #ed213a;" onclick="seleccionarAuto('Chevrolet Tahoe Z71', 64300)">Comprar</button></td></tr>
+                    <tr><td>3</td><td><img src="c3.avif" alt="Jeep" class="img-tabla-auto"></td><td><strong>Jeep Grand Cherokee</strong></td><td>2025</td><td>Pentastar V6 Quadra-Trac 4x4</td><td class="precio-celda">$43,900</td><td><button class="btn-comprar" style="background: #ed213a;" onclick="seleccionarAuto('Jeep Grand Cherokee', 43900)">Comprar</button></td></tr>
+                    <tr><td>4</td><td><img src="c4.jpg" alt="Toyota" class="img-tabla-auto"></td><td><strong>Toyota Land Cruiser</strong></td><td>2026</td><td>i-FORCE MAX Turbo Hybrid 4WD</td><td class="precio-celda">$56,100</td><td><button class="btn-comprar" style="background: #ed213a;" onclick="seleccionarAuto('Toyota Land Cruiser', 56100)">Comprar</button></td></tr>
+                    <tr><td>5</td><td><img src="c5.jpeg" alt="Honda" class="img-tabla-auto"></td><td><strong>Honda Pilot Elite</strong></td><td>2025</td><td>3.5L V6 i-VTM4 Trail-System</td><td class="precio-celda">$49,500</td><td><button class="btn-comprar" style="background: #ed213a;" onclick="seleccionarAuto('Honda Pilot Elite', 49500)">Comprar</button></td></tr>
+                    <tr><td>6</td><td><img src="c6.webp" alt="Nissan" class="img-tabla-auto"></td><td><strong>Nissan Pathfinder Rock</strong></td><td>2025</td><td>V6 Direct Injection 4WD-Selector</td><td class="precio-celda">$47,200</td><td><button class="btn-comprar" style="background: #ed213a;" onclick="seleccionarAuto('Nissan Pathfinder Rock', 47200)">Comprar</button></td></tr>
+                    <tr><td>7</td><td><img src="c7.avif" alt="GMC" class="img-tabla-auto"></td><td><strong>GMC Yukon Denali</strong></td><td>2026</td><td>6.2L V8 Premium Active Ride</td><td class="precio-celda">$76,200</td><td><button class="btn-comprar" style="background: #ed213a;" onclick="seleccionarAuto('GMC Yukon Denali', 76200)">Comprar</button></td></tr>
+                    <tr><td>8</td><td><img src="c8.avif" alt="Subaru" class="img-tabla-auto"></td><td><strong>Subaru Ascent Onyx</strong></td><td>2025</td><td>2.4T Boxer Lineartronic AWD</td><td class="precio-celda">$42,100</td><td><button class="btn-comprar" style="background: #ed213a;" onclick="seleccionarAuto('Subaru Ascent Onyx', 42100)">Comprar</button></td></tr>
+                    <tr><td>9</td><td><img src="c9.png" alt="Mazda" class="img-tabla-auto"></td><td><strong>Mazda CX-90 TurboS</strong></td><td>2025</td><td>e-Skyactiv G 3.3L Inline-6</td><td class="precio-celda">$52,950</td><td><button class="btn-comprar" style="background: #ed213a;" onclick="seleccionarAuto('Mazda CX-90 TurboS', 52950)">Comprar</button></td></tr>
+                    <tr><td>10</td><td><img src="c10.jpg" alt="Hyundai" class="img-tabla-auto"></td><td><strong>Hyundai Palisade Calligraphy</strong></td><td>2026</td><td>3.8L GDI Dual CVVT HTRAC</td><td class="precio-celda">$50,800</td><td><button class="btn-comprar" style="background: #ed213a;" onclick="seleccionarAuto('Hyundai Palisade Calligraphy', 50800)">Comprar</button></td></tr>
+                    <tr><td>11</td><td><img src="c11.jpg" alt="Kia" class="img-tabla-auto"></td><td><strong>Kia Telluride SX</strong></td><td>2025</td><td>Lambda V6 Active Torque AWD</td><td class="precio-celda">$48,900</td><td><button class="btn-comprar" style="background: #ed213a;" onclick="seleccionarAuto('Kia Telluride SX', 48900)">Comprar</button></td></tr>
+                    <tr><td>12</td><td><img src="c12.jpg" alt="Lexus" class="img-tabla-auto"></td><td><strong>Lexus GX 550 Luxury</strong></td><td>2026</td><td>3.4L Twin-Turbo V6 Full-Time 4WD</td><td class="precio-celda">$69,250</td><td><button class="btn-comprar" style="background: #ed213a;" onclick="seleccionarAuto('Lexus GX 550 Luxury', 69250)">Comprar</button></td></tr>
+                    <tr><td>13</td><td><img src="c13.jpg" alt="Audi" class="img-tabla-auto"></td><td><strong>Audi Q7 Prestige</strong></td><td>2025</td><td>55 TFSI Quattro Tiptronic</td><td class="precio-celda">$66,800</td><td><button class="btn-comprar" style="background: #ed213a;" onclick="seleccionarAuto('Audi Q7 Prestige', 66800)">Comprar</button></td></tr>
+                    <tr><td>14</td><td><img src="c14.jpg" alt="BMW" class="img-tabla-auto"></td><td><strong>BMW X5 M60i</strong></td><td>2026</td><td>4.4L TwinPower V8 Mild-Hybrid</td><td class="precio-celda">$89,300</td><td><button class="btn-comprar" style="background: #ed213a;" onclick="seleccionarAuto('BMW X5 M60i', 89300)">Comprar</button></td></tr>
+                    <tr><td>15</td><td><img src="c15.webp" alt="Mercedes" class="img-tabla-auto"></td><td><strong>Mercedes-Benz GLE 450</strong></td><td>2025</td><td>3.0L Inline-6 Turbo 4MATIC</td><td class="precio-celda">$69,500</td><td><button class="btn-comprar" style="background: #ed213a;" onclick="seleccionarAuto('Mercedes-Benz GLE 450', 69500)">Comprar</button></td></tr>
+                    <tr><td>16</td><td><img src="c16.png"Volvo" class="img-tabla-auto"></td><td><strong>Volvo XC60 Ultra</strong></td><td>2025</td><td>B5 Turbocharged Mild-AWD</td><td class="precio-celda">$50,300</td><td><button class="btn-comprar" style="background: #ed213a;" onclick="seleccionarAuto('Volvo XC60 Ultra', 50300)">Comprar</button></td></tr>
+                    <tr><td>17</td><td><img src="c17.webp" alt="Land Rover" class="img-tabla-auto"></td><td><strong>Land Rover Range Rover Sport</strong></td><td>2026</td><td>P400 Dynamic Dynamic-Air Dynamic-Susp</td><td class="precio-celda">$83,600</td><td><button class="btn-comprar" style="background: #ed213a;" onclick="seleccionarAuto('Land Rover Range Rover Sport', 83600)">Comprar</button></td></tr>
+                    <tr><td>18</td><td><img src="c18.webp"Porsche" class="img-tabla-auto"></td><td><strong>Porsche Cayenne S</strong></td><td>2025</td><td>4.0L Twin-Turbo V8 Tiptronic</td><td class="precio-celda">$95,700</td><td><button class="btn-comprar" style="background: #ed213a;" onclick="seleccionarAuto('Porsche Cayenne S', 95700)">Comprar</button></td></tr>
+                    <tr><td>19</td><td><img src="c19.jpg"Volkswagen" class="img-tabla-auto"></td><td><strong>Volkswagen Atlas Sel</strong></td><td>2025</td><td>2.0T TSI 4Motion Active-Cockpit</td><td class="precio-celda">$44,200</td><td><button class="btn-comprar" style="background: #ed213a;" onclick="seleccionarAuto('Volkswagen Atlas Sel', 44200)">Comprar</button></td></tr>
+                    <tr><td>20</td><td><img src="c20.avif" alt="Cadillac" class="img-tabla-auto"></td><td><strong>Cadillac Escalade Sport</strong></td><td>2026</td><td>6.2L V8 Magnetic Ride Control</td><td class="precio-celda">$81,900</td><td><button class="btn-comprar" style="background: #ed213a;" onclick="seleccionarAuto('Cadillac Escalade Sport', 81900)">Comprar</button></td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <section class="registro-compra">
+            <h2>Formulario de Registro de Compra</h2>
+            <form id="formRegistro" onsubmit="registrarCompra(event)">
+                <div class="campo-grupo">
+                    <label>Auto Seleccionado:</label>
+                    <input type="text" id="autoElegido" readonly required placeholder="Haz clic en 'Comprar' arriba">
+                </div>
+                <div class="campo-grupo">
+                    <label>Precio del Vehículo:</label>
+                    <input type="text" id="precioElegido" readonly required placeholder="$0.00">
+                </div>
+                <div class="campo-grupo">
+                    <label>Nombre del Comprador:</label>
+                    <input type="text" id="nombreComprador" required placeholder="Tu nombre completo">
+                </div>
+                <div class="campo-grupo">
+                    <label>Identificación / Cédula:</label>
+                    <input type="text" id="idComprador" required placeholder="Número de documento">
+                </div>
+                <button type="submit" class="btn-confirmar" style="background: #22c55e;">Confirmar Registro</button>
+            </form>
+            <div id="mensajeExito" class="alerta-oculta"></div>
+        </section>
+    </main>
+
+    <script src="subpaginas.js"></script>
+</body>
+</html>
