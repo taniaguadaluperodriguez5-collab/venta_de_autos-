@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoElite | Vehículos Híbridos</title>
+    <link rel="stylesheet" href="subpaginas.css">
+</head>
+<body>
+
+    <header class="header-subpagina" style="background: linear-gradient(135deg, #11998e, #38ef7d);">
+        <a href="index.html" class="btn-regresar">&larr; Volver al Inicio</a>
+        <h1>Vehículos Híbridos Eficientes (20 Disponibles)</h1>
+    </header>
+
+    <main class="contenido-subpagina">
+        <p class="introduccion">La fusión perfecta de dos mundos: potencia de combustión y eficiencia eléctrica regenerativa.</p>
+        
+        <div class="tabla-contenedor">
+            <table class="tabla-autos">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Imagen</th>
+                        <th>Modelo</th>
+                        <th>Año</th>
+                        <th>Autonomía / Motor</th>
+                        <th>Precio (USD)</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td><img src="h1.jpg" alt="Toyota" class="img-tabla-auto"></td><td><strong>Toyota RAV4 Hybrid</strong></td><td>2025</td><td>2.5L Híbrido Autorrecargable</td><td class="precio-celda">$31,750</td><td><button class="btn-comprar" style="background: #11998e;" onclick="seleccionarAuto('Toyota RAV4 Hybrid', 31750)">Comprar</button></td></tr>
+                    <tr><td>2</td><td><img src="h2.png" alt="Honda" class="img-tabla-auto"></td><td><strong>Honda Accord Hybrid</strong></td><td>2025</td><td>2.0L i-MMD Respuesta Rápida</td><td class="precio-celda">$33,990</td><td><button class="btn-comprar" style="background: #11998e;" onclick="seleccionarAuto('Honda Accord Hybrid', 33990)">Comprar</button></td></tr>
+                    <tr><td>3</td><td><img src="h3.webp" alt="Ford" class="img-tabla-auto"></td><td><strong>Ford Escape Plug-In</strong></td><td>2026</td><td>Enchufable EcoAtkinson</td><td class="precio-celda">$40,500</td><td><button class="btn-comprar" style="background: #11998e;" onclick="seleccionarAuto('Ford Escape Plug-In', 40500)">Comprar</button></td></tr>
+                    <tr><td>4</td><td><img src="h4.jpg" alt="BMW" class="img-tabla-auto"></td><td><strong>BMW 330e Hybrid</strong></td><td>2025</td><td>TwinPower iPerformance</td><td class="precio-celda">$45,600</td><td><button class="btn-comprar" style="background: #11998e;" onclick="seleccionarAuto('BMW 330e Hybrid', 45600)">Comprar</button></td></tr>
+                    <tr><td>5</td><td><img src="h5.jpg" alt="Toyota" class="img-tabla-auto"></td><td><strong>Toyota Prius Premium</strong></td><td>2025</td><td>Fifth-Gen Hybrid Synergy</td><td class="precio-celda">$29,400</td><td><button class="btn-comprar" style="background: #11998e;" onclick="seleccionarAuto('Toyota Prius Premium', 29400)">Comprar</button></td></tr>
+                    <tr><td>6</td><td><img src="h6.jpg" alt="Hyundai" class="img-tabla-auto"></td><td><strong>Hyundai Tucson Hybrid</strong></td><td>2026</td><td>1.6T GDI Smartstream</td><td class="precio-celda">$32,500</td><td><button class="btn-comprar" style="background: #11998e;" onclick="seleccionarAuto('Hyundai Tucson Hybrid', 32500)">Comprar</button></td></tr>
+                    <tr><td>7</td><td><img src="h7.jpg" alt="Lexus" class="img-tabla-auto"></td><td><strong>Lexus RX 500h F Sport</strong></td><td>2025</td><td>2.4L Turbo Hybrid Direct4</td><td class="precio-celda">$63,800</td><td><button class="btn-comprar" style="background: #11998e;" onclick="seleccionarAuto('Lexus RX 500h F Sport', 63800)">Comprar</button></td></tr>
+                    <tr><td>8</td><td><img src="h8.avif" alt="Kia" class="img-tabla-auto"></td><td><strong>Kia Sportage Hybrid</strong></td><td>2025</td><td>Turbo-Charged HEV AWD</td><td class="precio-celda">$28,500</td><td><button class="btn-comprar" style="background: #11998e;" onclick="seleccionarAuto('Kia Sportage Hybrid', 28500)">Comprar</button></td></tr>
+                    <tr><td>9</td><td><img src="h9.jpg" alt="Volvo" class="img-tabla-auto"></td><td><strong>Volvo XC90 T8 Plug-In</strong></td><td>2026</td><td>Recharge Twin Engine V8</td><td class="precio-celda">$73,100</td><td><button class="btn-comprar" style="background: #11998e;" onclick="seleccionarAuto('Volvo XC90 T8 Plug-In', 73100)">Comprar</button></td></tr>
+                    <tr><td>10</td><td><img src="h10.jpg" alt="Jeep" class="img-tabla-auto"></td><td><strong>Jeep Grand Cherokee 4xe</strong></td><td>2025</td><td>2.0L Turbo PHEV Offroad</td><td class="precio-celda">$61,400</td><td><button class="btn-comprar" style="background: #11998e;" onclick="seleccionarAuto('Jeep Grand Cherokee 4xe', 61400)">Comprar</button></td></tr>
+                    <tr><td>11</td><td><img src="h11.jpg" alt="Honda" class="img-tabla-auto"></td><td><strong>Honda CR-V Hybrid</strong></td><td>2025</td><td>Sport AWD Dual-Motor</td><td class="precio-celda">$34,650</td><td><button class="btn-comprar" style="background: #11998e;" onclick="seleccionarAuto('Honda CR-V Hybrid', 34650)">Comprar</button></td></tr>
+                    <tr><td>12</td><td><img src="h12.jpg" alt="Toyota" class="img-tabla-auto"></td><td><strong>Toyota Camry Hybrid</strong></td><td>2025</td><td>New THS Dynamic Force</td><td class="precio-celda">$28,800</td><td><button class="btn-comprar" style="background: #11998e;" onclick="seleccionarAuto('Toyota Camry Hybrid', 28800)">Comprar</button></td></tr>
+                    <tr><td>13</td><td><img src="h13.webp" alt="Porsche" class="img-tabla-auto"></td><td><strong>Porsche Panamera E-Hybrid</strong></td><td>2026</td><td>V6 E-Hybrid Sport Chrono</td><td class="precio-celda">$115,000</td><td><button class="btn-comprar" style="background: #11998e;" onclick="seleccionarAuto('Porsche Panamera E-Hybrid', 115000)">Comprar</button></td></tr>
+                    <tr><td>14</td><td><img src="h14.webp" alt="Audi" class="img-tabla-auto"></td><td><strong>Audi Q5 TFSI e</strong></td><td>2025</td><td>Plug-in Hybrid Quattro</td><td class="precio-celda">$58,400</td><td><button class="btn-comprar" style="background: #11998e;" onclick="seleccionarAuto('Audi Q5 TFSI e', 58400)">Comprar</button></td></tr>
+                    <tr><td>15</td><td><img src="h15.jpg" alt="Mercedes" class="img-tabla-auto"></td><td><strong>Mercedes-Benz GLC 350e</strong></td><td>2026</td><td>EQ Power Intelligent Drive</td><td class="precio-celda">$59,900</td><td><button class="btn-comprar" style="background: #11998e;" onclick="seleccionarAuto('Mercedes-Benz GLC 350e', 59900)">Comprar</button></td></tr>
+                    <tr><td>16</td><td><img src="h16.jpg" alt="Mitsubishi" class="img-tabla-auto"></td><td><strong>Mitsubishi Outlander PHEV</strong></td><td>2025</td><td>Super All-Wheel Control</td><td class="precio-celda">$40,300</td><td><button class="btn-comprar" style="background: #11998e;" onclick="seleccionarAuto('Mitsubishi Outlander PHEV', 40300)">Comprar</button></td></tr>
+                    <tr><td>17</td><td><img src="h17.webp" alt="Subaru" class="img-tabla-auto"></td><td><strong>Subaru Crosstrek Hybrid</strong></td><td>2025</td><td>StarDrive Boxer HEV</td><td class="precio-celda">$31,200</td><td><button class="btn-comprar" style="background: #11998e;" onclick="seleccionarAuto('Subaru Crosstrek Hybrid', 31200)">Comprar</button></td></tr>
+                    <tr><td>18</td><td><img src="h18.jpg" alt="Ford" class="img-tabla-auto"></td><td><strong>Ford F-150 PowerBoost</strong></td><td>2025</td><td>3.5L V6 Full Hybrid Eco</td><td class="precio-celda">$58,500</td><td><button class="btn-comprar" style="background: #11998e;" onclick="seleccionarAuto('Ford F-150 PowerBoost', 58500)">Comprar</button></td></tr>
+                    <tr><td>19</td><td><img src="h19.webp" alt="Hyundai" class="img-tabla-auto"></td><td><strong>Hyundai Santa Fe Hybrid</strong></td><td>2026</td><td>Turbo HEV Smart 4WD</td><td class="precio-celda">$37,200</td><td><button class="btn-comprar" style="background: #11998e;" onclick="seleccionarAuto('Hyundai Santa Fe Hybrid', 37200)">Comprar</button></td></tr>
+                    <tr><td>20</td><td><img src="h20.jpg" alt="Land Rover" class="img-tabla-auto"></td><td><strong>Land Rover Defender PHEV</strong></td><td>2026</td><td>P400e Terrain Response</td><td class="precio-celda">$83,000</td><td><button class="btn-comprar" style="background: #11998e;" onclick="seleccionarAuto('Land Rover Defender PHEV', 83000)">Comprar</button></td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <section class="registro-compra">
+            <h2>Formulario de Registro de Compra</h2>
+            <form id="formRegistro" onsubmit="registrarCompra(event)">
+                <div class="campo-grupo">
+                    <label>Auto Seleccionado:</label>
+                    <input type="text" id="autoElegido" readonly required placeholder="Haz clic en 'Comprar' arriba">
+                </div>
+                <div class="campo-grupo">
+                    <label>Precio del Vehículo:</label>
+                    <input type="text" id="precioElegido" readonly required placeholder="$0.00">
+                </div>
+                <div class="campo-grupo">
+                    <label>Nombre del Comprador:</label>
+                    <input type="text" id="nombreComprador" required placeholder="Tu nombre completo">
+                </div>
+                <div class="campo-grupo">
+                    <label>Identificación / Cédula:</label>
+                    <input type="text" id="idComprador" required placeholder="Número de documento">
+                </div>
+                <button type="submit" class="btn-confirmar" style="background: #22c55e;">Confirmar Registro</button>
+            </form>
+            <div id="mensajeExito" class="alerta-oculta"></div>
+        </section>
+    </main>
+
+    <script src="subpaginas.js"></script>
+</body>
+</html>

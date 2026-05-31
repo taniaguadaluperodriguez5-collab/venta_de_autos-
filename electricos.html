@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoElite | Vehículos 100% Eléctricos</title>
+    <link rel="stylesheet" href="subpaginas.css">
+</head>
+<body>
+
+    <header class="header-subpagina" style="background: linear-gradient(135deg, #1e3c72, #2a5298);">
+        <a href="index.html" class="btn-regresar">&larr; Volver al Inicio</a>
+        <h1>Modelos 100% Eléctricos (20 Disponibles)</h1>
+    </header>
+
+    <main class="contenido-subpagina">
+        <p class="introduccion">Descubre el futuro de la movilidad sostenible. Modelos de alta gama con autonomía extendida y cero emisiones.</p>
+        
+        <div class="tabla-contenedor">
+            <table class="tabla-autos">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Imagen</th>
+                        <th>Modelo</th>
+                        <th>Año</th>
+                        <th>Autonomía / Motor</th>
+                        <th>Precio (USD)</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td><img src="e1.webp" alt="Tesla" class="img-tabla-auto"></td><td><strong>Tesla Model S Plaid</strong></td><td>2025</td><td>Tri-Motor (600 km)</td><td class="precio-celda">$89,990</td><td><button class="btn-comprar" style="background: #1e3c72;" onclick="seleccionarAuto('Tesla Model S Plaid', 89990)">Comprar</button></td></tr>
+                    <tr><td>2</td><td><img src="e2.webp" alt="Audi" class="img-tabla-auto"></td><td><strong>Audi e-tron GT</strong></td><td>2026</td><td>Quattro Dual (488 km)</td><td class="precio-celda">$104,900</td><td><button class="btn-comprar" style="background: #1e3c72;" onclick="seleccionarAuto('Audi e-tron GT', 104900)">Comprar</button></td></tr>
+                    <tr><td>3</td><td><img src="e3.webp" alt="Porsche" class="img-tabla-auto"></td><td><strong>Porsche Taycan Turbo</strong></td><td>2025</td><td>Performance Plus (505 km)</td><td class="precio-celda">$125,200</td><td><button class="btn-comprar" style="background: #1e3c72;" onclick="seleccionarAuto('Porsche Taycan Turbo', 125200)">Comprar</button></td></tr>
+                    <tr><td>4</td><td><img src="e4.jpg" alt="Hyundai" class="img-tabla-auto"></td><td><strong>Hyundai Ioniq 5</strong></td><td>2026</td><td>RWD Eco-Drive (480 km)</td><td class="precio-celda">$41,450</td><td><button class="btn-comprar" style="background: #1e3c72;" onclick="seleccionarAuto('Hyundai Ioniq 5', 41450)">Comprar</button></td></tr>
+                    <tr><td>5</td><td><img src="e5.jpg" alt="Kia" class="img-tabla-auto"></td><td><strong>Kia EV6 GT</strong></td><td>2025</td><td>Dual Motor AWD (424 km)</td><td class="precio-celda">$61,600</td><td><button class="btn-comprar" style="background: #1e3c72;" onclick="seleccionarAuto('Kia EV6 GT', 61600)">Comprar</button></td></tr>
+                    <tr><td>6</td><td><img src="e6.webp" alt="BMW" class="img-tabla-auto"></td><td><strong>BMW i4 M50</strong></td><td>2025</td><td>E-Drive Dual (510 HP)</td><td class="precio-celda">$69,700</td><td><button class="btn-comprar" style="background: #1e3c72;" onclick="seleccionarAuto('BMW i4 M50', 69700)">Comprar</button></td></tr>
+                    <tr><td>7</td><td><img src="e7.jpg" alt="Ford" class="img-tabla-auto"></td><td><strong>Ford Mustang Mach-E</strong></td><td>2025</td><td>Extended Range (490 km)</td><td class="precio-celda">$43,995</td><td><button class="btn-comprar" style="background: #1e3c72;" onclick="seleccionarAuto('Ford Mustang Mach-E', 43995)">Comprar</button></td></tr>
+                    <tr><td>8</td><td><img src="e8.avif" alt="Mercedes" class="img-tabla-auto"></td><td><strong>Mercedes-Benz EQS Sedan</strong></td><td>2026</td><td>Advanced Electric (640 km)</td><td class="precio-celda">$104,400</td><td><button class="btn-comprar" style="background: #1e3c72;" onclick="seleccionarAuto('Mercedes-Benz EQS Sedan', 104400)">Comprar</button></td></tr>
+                    <tr><td>9</td><td><img src="e9.avif" alt="Tesla" class="img-tabla-auto"></td><td><strong>Tesla Model Y Long Range</strong></td><td>2025</td><td>Dual AWD Ultra (533 km)</td><td class="precio-celda">$47,990</td><td><button class="btn-comprar" style="background: #1e3c72;" onclick="seleccionarAuto('Tesla Model Y Long Range', 47990)">Comprar</button></td></tr>
+                    <tr><td>10</td><td><img src="e10.jpg" alt="Lucid" class="img-tabla-auto"></td><td><strong>Lucid Air Grand Touring</strong></td><td>2026</td><td>Dream Drive (700 km)</td><td class="precio-celda">$110,900</td><td><button class="btn-comprar" style="background: #1e3c72;" onclick="seleccionarAuto('Lucid Air Grand Touring', 110900)">Comprar</button></td></tr>
+                    <tr><td>11</td><td><img src="e11.jpg" alt="Nissan" class="img-tabla-auto"></td><td><strong>Nissan Ariya Evolve</strong></td><td>2025</td><td>AC Sync Motor (460 km)</td><td class="precio-celda">$43,190</td><td><button class="btn-comprar" style="background: #1e3c72;" onclick="seleccionarAuto('Nissan Ariya Evolve', 43190)">Comprar</button></td></tr>
+                    <tr><td>12</td><td><img src="e12.webp" alt="Rivian" class="img-tabla-auto"></td><td><strong>Rivian R1T</strong></td><td>2026</td><td>Quad-Motor AWD (520 km)</td><td class="precio-celda">$73,000</td><td><button class="btn-comprar" style="background: #1e3c72;" onclick="seleccionarAuto('Rivian R1T', 73000)">Comprar</button></td></tr>
+                    <tr><td>13</td><td><img src="e13.avif" alt="Polestar" class="img-tabla-auto"></td><td><strong>Polestar 2 BST</strong></td><td>2025</td><td>Long Range Dual (470 km)</td><td class="precio-celda">$51,300</td><td><button class="btn-comprar" style="background: #1e3c72;" onclick="seleccionarAuto('Polestar 2 BST', 51300)">Comprar</button></td></tr>
+                    <tr><td>14</td><td><img src="e14.png" alt="Volkswagen" class="img-tabla-auto"></td><td><strong>Volkswagen ID.4</strong></td><td>2025</td><td>Pro Electric Sync (443 km)</td><td class="precio-celda">$39,735</td><td><button class="btn-comprar" style="background: #1e3c72;" onclick="seleccionarAuto('Volkswagen ID.4', 39735)">Comprar</button></td></tr>
+                    <tr><td>15</td><td><img src="e15.jpg" alt="Chevrolet" class="img-tabla-auto"></td><td><strong>Chevrolet Blazer EV</strong></td><td>2026</td><td>Ultium Drive System (450 km)</td><td class="precio-celda">$48,800</td><td><button class="btn-comprar" style="background: #1e3c72;" onclick="seleccionarAuto('Chevrolet Blazer EV', 48800)">Comprar</button></td></tr>
+                    <tr><td>16</td><td><img src="e16.jpg" alt="Volvo" class="img-tabla-auto"></td><td><strong>Volvo EX90</strong></td><td>2026</td><td>Twin Motor Performance (480 km)</td><td class="precio-celda">$76,695</td><td><button class="btn-comprar" style="background: #1e3c72;" onclick="seleccionarAuto('Volvo EX90', 76695)">Comprar</button></td></tr>
+                    <tr><td>17</td><td><img src="e17.jpeg" alt="BMW" class="img-tabla-auto"></td><td><strong>BMW iX M60</strong></td><td>2025</td><td>High Performance Elec (610 HP)</td><td class="precio-celda">$111,500</td><td><button class="btn-comprar" style="background: #1e3c72;" onclick="seleccionarAuto('BMW iX M60', 111500)">Comprar</button></td></tr>
+                    <tr><td>18</td><td><img src="e18.avif" alt="GMC" class="img-tabla-auto"></td><td><strong>GMC Hummer EV</strong></td><td>2026</td><td>3-Motor Ultium (1000 HP)</td><td class="precio-celda">$98,800</td><td><button class="btn-comprar" style="background: #1e3c72;" onclick="seleccionarAuto('GMC Hummer EV', 98800)">Comprar</button></td></tr>
+                    <tr><td>19</td><td><img src="e19.jpg" alt="Lexus" class="img-tabla-auto"></td><td><strong>Lexus RZ 450e</strong></td><td>2025</td><td>Direct4 Drive (354 km)</td><td class="precio-celda">$59,650</td><td><button class="btn-comprar" style="background: #1e3c72;" onclick="seleccionarAuto('Lexus RZ 450e', 59650)">Comprar</button></td></tr>
+                    <tr><td>20</td><td><img src="e20.jpg" alt="Fiat" class="img-tabla-auto"></td><td><strong>Fiat 500e</strong></td><td>2025</td><td>Urban RED Motor (240 km)</td><td class="precio-celda">$32,500</td><td><button class="btn-comprar" style="background: #1e3c72;" onclick="seleccionarAuto('Fiat 500e', 32500)">Comprar</button></td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <section class="registro-compra">
+            <h2>Formulario de Registro de Compra</h2>
+            <form id="formRegistro" onsubmit="registrarCompra(event)">
+                <div class="campo-grupo">
+                    <label>Auto Seleccionado:</label>
+                    <input type="text" id="autoElegido" readonly required placeholder="Haz clic en 'Comprar' arriba">
+                </div>
+                <div class="campo-grupo">
+                    <label>Precio del Vehículo:</label>
+                    <input type="text" id="precioElegido" readonly required placeholder="$0.00">
+                </div>
+                <div class="campo-grupo">
+                    <label>Nombre del Comprador:</label>
+                    <input type="text" id="nombreComprador" required placeholder="Tu nombre completo">
+                </div>
+                <div class="campo-grupo">
+                    <label>Identificación / Cédula:</label>
+                    <input type="text" id="idComprador" required placeholder="Número de documento">
+                </div>
+                <button type="submit" class="btn-confirmar" style="background: #22c55e;">Confirmar Registro</button>
+            </form>
+            <div id="mensajeExito" class="alerta-oculta"></div>
+        </section>
+    </main>
+
+    <script src="subpaginas.js"></script>
+</body>
+</html>

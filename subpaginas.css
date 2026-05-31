@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+body { background-color: #f1f5f9; color: #1e293b; padding-bottom: 60px; }
+
+.header-subpagina { color: white; padding: 35px 20px; text-align: center; position: relative; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
+.btn-regresar { position: absolute; left: 30px; top: 38px; color: white; text-decoration: none; font-weight: bold; background: rgba(255,255,255,0.2); padding: 8px 16px; border-radius: 6px; transition: 0.3s; }
+.btn-regresar:hover { background: rgba(255,255,255,0.4); }
+
+.contenido-subpagina { max-width: 950px; margin: 30px auto; padding: 0 20px; }
+.introduccion { font-size: 15px; text-align: center; margin-bottom: 35px; color: #64748b; font-style: italic; }
+
+.tabla-contenedor { background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.05); margin-bottom: 40px; border: 1px solid #e2e8f0; }
+.tabla-autos { width: 100%; border-collapse: collapse; text-align: left; }
+.tabla-autos th { background: #0f172a; color: white; padding: 16px; font-size: 14px; text-transform: uppercase; }
+.tabla-autos td { padding: 16px; border-bottom: 1px solid #f1f5f9; font-size: 14px; }
+.precio-celda { font-weight: 700; color: #e74c3c; font-size: 16px; }
+
+.btn-comprar { color: white; border: none; padding: 8px 18px; border-radius: 6px; cursor: pointer; font-weight: bold; transition: 0.2s; }
+.btn-comprar:hover { filter: brightness(1.3); transform: scale(1.05); }
+
+.registro-compra { background: white; padding: 35px; border-radius: 12px; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.05); border: 1px solid #e2e8f0; }
+.registro-compra h2 { margin-bottom: 25px; text-align: center; color: #0f172a; font-size: 22px; }
+
+.campo-grupo { margin-bottom: 18px; }
+.campo-grupo label { display: block; font-weight: 600; margin-bottom: 6px; color: #334155; font-size: 14px; }
+.campo-grupo input { width: 100%; padding: 11px; border: 1px solid #cbd5e1; border-radius: 6px; background: #f8fafc; font-size: 14px; }
+.campo-grupo input[readonly] { background: #e2e8f0; font-weight: bold; color: #1e293b; border-color: #cbd5e1; }
+
+.btn-confirmar { width: 100%; color: white; border: none; padding: 14px; font-size: 16px; font-weight: bold; border-radius: 6px; cursor: pointer; margin-top: 10px; transition: 0.2s; }
+.btn-confirmar:hover { filter: brightness(1.1); }
+
+.alerta-oculta { display: none; }
+.alerta-visible { margin-top: 25px; background: #dcfce7; border: 1px solid #bbf7d0; color: #14532d; padding: 22px; border-radius: 8px; font-size: 14px; line-height: 1.6; }
+.alerta-visible h3 { margin-bottom: 8px; color: #166534; }
+
+.img-tabla-auto{
+    width: 90px;
+    height: 55px;
+    object-fit: contain;
+    border-radius: 4px;
+    background-color: #e3ebf2;
+    display: block;
+    margin: 0 auto;
+}
